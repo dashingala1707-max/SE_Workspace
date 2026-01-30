@@ -1,0 +1,100 @@
+1. Explain in your own words what a program is and how it functions.
+A program is a set of instructions written in a programming language that tells a computer what to do. It functions by taking input, processing it according to the instructions, and producing an output.
+
+2. What are the key steps involved in the programming process?
+Problem analysis – Understand the problem.
+Algorithm design – Plan the solution step by step.
+Coding – Write the program in a programming language.
+Compilation/Execution – Convert code to machine-readable form and run it.
+Testing & Debugging – Find and fix errors.
+Maintenance – Update the program as needed.
+
+3. What are the main differences between high-level and low-level programming languages?
+high-leval :this is the programming lenguage which is easyly understend by the human being.
+low-leval:this is the programming language which is not understend by any human and the computer can easyly understend it.
+
+4. Describe the roles of the client and server in web communication.
+Client: Sends requests to access resources or services..
+Server: Receives requests, processes them, and sends back responses.
+
+5. Explain the function of the TCP/IP model and its layers.
+The TCP/IP model allows computers to communicate over the internet. Its layers:
+Application Layer – Handles network services like HTTP, FTP.
+Transport Layer – Provides data transfer (TCP/UDP).
+Internet Layer – Routes data packets (IP).
+Network Access Layer – Handles physical transmission of data.
+
+6. Explain Client Server Communication.
+Client-server communication is a request-response model:
+The client requests data or service.
+
+The server processes the request and sends back a response.
+This allows multiple clients to access centralized resources efficiently.
+
+7. How does broadband differ from fiber-optic internet?
+Broadband: General term for high-speed internet over cable, DSL, or wireless; slower than fiber.
+Fiber-optic: Uses light signals through fiber cables; faster, more stable, and supports higher bandwidth.
+
+8. What are the differences between HTTP and HTTPS protocols?
+HTTP:this protocol is used when any website is not safe for ypu and your data.
+HTTPS:this protocols is used when any website is fully secure with you and your data.
+
+9. What is the role of encryption in securing applications?
+Encryption converts data into a coded format that only authorized users can read. It protects sensitive information from hackers, ensuring confidentiality, integrity, and security of applications.
+
+10. What is the role of application software in businesses?
+Application software helps businesses automate tasks, improve efficiency, manage data, and increase productivity.
+
+11. What are the main stages of the software development process?
+Requirement analysis, design, development, testing, deployment, and maintenance.
+
+12. Why is the requirement analysis phase critical in software development?
+It clearly defines user needs and prevents errors, rework, and project failure.
+
+13. What is the role of software analysis in the development process?
+It studies requirements and converts them into a clear and workable solution plan.
+
+14. What are the key elements of system design?
+Architecture, components, data design, interfaces, and security.
+
+15. Why is software testing important?
+It finds errors, ensures quality, and verifies that software works correctly.
+
+16. What types of software maintenance are there?
+Corrective, adaptive, perfective, and preventive maintenance.
+
+17. What are the key differences between web and desktop applications?
+Web apps run in browsers and need internet; desktop apps are installed and can work offline.
+
+18. What are the advantages of using web applications over desktop applications?
+Easy access, no installation, automatic updates, and platform independence.
+
+19. What is the difference between system software and application software?
+System software controls and manages computer hardware and provides a platform for applications (e.g., Operating System).
+Application software is designed to perform specific user tasks like writing documents or browsing the internet.
+
+20. What is the significance of modularity in software architecture?
+Modularity divides software into small, independent modules. It makes the system easier to understand, develop, test, maintain, and modify without affecting the entire system.
+
+21. Why are layers important in software architecture?
+Layers separate responsibilities within software. They improve organization, make maintenance easier, enhance security, and allow changes in one layer without affecting others.
+
+22. Explain the importance of a development environment in software production.
+A development environment provides tools like editors, compilers, and debuggers. It helps developers write, test, and debug code efficiently before deploying it to production.
+
+23. What is the difference between source code and machine code?
+Source code is written by humans using programming languages and is easy to read.
+Machine code is written in binary form (0s and 1s) and is directly executed by the computer.
+
+24. Why is version control important in software development?
+Version control tracks changes in code, helps multiple developers work together, allows recovery of previous versions, and prevents data loss.
+
+25. What are the benefits of using GitHub for students?
+GitHub helps students learn version control, collaborate on projects, showcase their work, access open-source projects, and improve coding skills.
+
+26. What is the significance of DFDs in system analysis?
+DFDs show how data flows within a system and help in understanding system processes clearly.
+
+27. What are the pros and cons of desktop applications compared to web applications?
+Pros: Fast performance, works offline, better hardware access.
+Cons: Requires installation, less portable, manual upda

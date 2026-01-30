@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int p = 10000;
+    int r = 10;
+    int t = 5;
+
+    float si = (p * r * t) / 100.0;
+
+    printf("The simple interest is : %f", si);
+
+    return 0;
+}

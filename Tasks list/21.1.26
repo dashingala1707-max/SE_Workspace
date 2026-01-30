@@ -1,0 +1,29 @@
+//user input program.....
+
+#include<stdio.h>
+int main()
+{
+    int pizza ;
+    int burger ;
+    int coffee ;
+    int tea ;
+    
+    printf("Enter the price of pizza :");
+    scanf("%d",&pizza);
+    
+    printf("Enter the price of byrger :");
+    scanf("%d",&burger);
+    
+    printf("Enter the price of coffee :");
+    scanf("%d",&coffee);
+    
+    printf("Enter the price of tea :");
+    scanf("%d",&tea);
+    
+    int total = pizza + burger + coffee + tea;
+    
+    printf("your total value is :%d",total);
+    
+    return 0;
+    
+}    
