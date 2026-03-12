@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    // Loop from 1 up to (but not including) the break condition
+    for (i = 1; i <= 10; i++) {
+        
+        // Use continue to skip printing the number 3
+        if (i == 3) {
+            continue;
+        }
+
+        // Use break to stop the loop entirely when the number 5 is reached
+        if (i == 5) {
+            break;
+        }
+
+        // Print the number if neither condition was met
+        printf("%d\n", i);
+    }
+
+    return 0;
+}

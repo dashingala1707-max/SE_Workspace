@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <ctype.h> // Required for isalpha(), isdigit(), tolower(), etc.
+
+int main() {
+    char line[150];
+    int vowels = 0, consonants = 0, digits = 0, special_chars = 0;
+
+    printf("Enter a line of string: ");
+    // Use fgets for safer input handling than gets
+    fgets(line, sizeof(line), stdin);
+
+    // Loop through each character of the string until the null terminator '\0' is reached
+    for (int i = 0; line[i] != '\0'; ++i) {
+        char ch = line[i];
+
+        if (isalpha(ch)) {
+            // Convert character to lowercase for easy vowel checking
+            char lower_ch = tolower(ch);
+            if (lower_ch == 'a' || lower_ch == 'e' || lower_ch == 'i' || lower_ch == 'o' || lower_ch == 'u') {
+                vowels++;
+            } else {
+                consonants++;
+            }
+        } else if (isdigit(ch)) {
+            digits++;
+        } else if (ch != '\n') { // The newline character from fgets is handled here
+            special_chars++;
+        }
+    }
+
+    printf("\nResults:\n");
+    printf("* Vowels: %d\n", vowels);
+    printf("* Consonants: %d\n", consonants);
+    printf("* Digits: %d\n", digits);
+    printf("* Special Characters: %d\n", special_chars);
+
+    return 0;
+}

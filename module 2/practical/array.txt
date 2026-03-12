@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+// Helper functions for sorting and finding max
+void sort(int arr[], int n, int ascending) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (ascending ? arr[j] > arr[j + 1] : arr[j] < arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+int findMax(int arr[], int n) {
+    int max = arr[0];
+    for (int i = 1; i < n; i++) if (arr[i] > max) max = arr[i];
+    return max;
+}
+
+int main() {
+    // 1D Array (5 integers)
+    int arr1D[5], n = 5;
+    printf("Enter 5 integers:\n");
+    for (int i = 0; i < n; i++) scanf("%d", &arr1D[i]); //
+
+    printf("Original: ");
+    for (int i = 0; i < n; i++) printf("%d ", arr1D[i]);
+
+    sort(arr1D, n, 1); // Ascending
+    printf("\nAscending: ");
+    for (int i = 0; i < n; i++) printf("%d ", arr1D[i]);
+
+    sort(arr1D, n, 0); // Descending
+    printf("\nDescending: ");
+    for (int i = 0; i < n; i++) printf("%d ", arr1D[i]);
+
+    printf("\nMax: %d\n", findMax(arr1D, n)); //
+
+    // 2D Array (3x3 Matrix)
+    int matrix[3][3], sum = 0;
+    printf("\nEnter 9 integers for 3x3 matrix:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            scanf("%d", &matrix[i][j]);
+            sum += matrix[i][j]; //
+        }
+    }
+
+    printf("Matrix:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) printf("%d ", matrix[i][j]);
+        printf("\n");
+    }
+    printf("Sum: %d\n", sum);
+
+    return 0;
+}

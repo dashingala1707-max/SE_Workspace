@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    int b;
+    int choice;
+    int c=0;
+    
+    printf("enter number one :");
+    scanf("%d",&a);
+    
+    printf("enter number two :");
+    scanf("%d",&b);
+    
+    printf("enter the choice(+,-,*,/) :");
+    scanf(" %c",&choice);
+    
+    if(choice=='+')
+    {
+        c=a+b;
+    }
+    else if(choice=='-')
+    {
+        c=a-b;
+    }
+    else if(choice=='*')
+    {
+        c=a*b;
+    }
+    else if(choice=='/')
+    {
+        c=a/b;
+    }
+    else
+    {
+        printf("you entered wrong value");
+    }
+    printf("your answer is : %d",c);
+    
+    return 0;
+}

@@ -1,0 +1,133 @@
+1. Overview of C Programming
+History, Evolution, Importance and Use of C
+
+Introduction
+C is one of the most popular and powerful programming languages used in computer science. It is a general-purpose programming language that is widely used for system programming and software development.
+
+History and Evolution
+The C programming language was developed by Dennis Ritchie in 1972 at Bell Laboratories. It was created to improve the B programming language, which itself was derived from the BCPL language.
+
+C was mainly designed to develop the Unix Operating System, which made it very popular. Over time, C became the foundation for many other programming languages such as C++, Java, and C#.
+
+2. Setting Up Environment
+Steps to Install C Compiler and IDE
+To write and run C programs, we need a compiler and an Integrated Development Environment (IDE).
+
+Step 1: Install a C Compiler
+Download a compiler like GCC.
+Install it on your computer.
+Configure the system path so the compiler can run from the command line.
+
+Step 2: Install an IDE
+An IDE helps us write, compile, and run programs easily.
+Some popular IDEs for C programming are:
+Code::Blocks
+Dev-C++
+Visual Studio Code
+
+Step 3: Configure the IDE
+Open the IDE.
+Set the compiler path (for example GCC).
+Create a new C project or file
+
+3. Basic Structure of a C Program
+A C program follows a basic structure that includes several components.
+
+1. Header Files
+Header files contain declarations of functions used in the program.
+
+2. Main Function
+The main() function is the starting point of every C program.
+
+3. Variables and Data Types
+Variables store data in memory.
+
+Common data types in C:
+int → integers
+char → characters
+float → decimal numbers
+
+4. Operators in C
+Operators are symbols used to perform operations on variables and values.
+
+1. Arithmetic Operators
+Used for mathematical calculations.
+
+2. Relational Operators
+Used to compare two values.
+
+3. Logical Operators
+Used to combine conditions.
+
+4. Assignment Operator
+Used to assign values
+
+5. Conditional (Ternary) Operator
+Used to make decisions in a single line.
+
+5. Control Flow Statements in C
+Control flow statements control the order in which instructions are executed in a program. They help the program make decisions based on conditions.
+
+some of the conditional statements are 
+if
+if else
+else
+nested if 
+switch case brake
+
+6. Looping in C
+Loops are used to repeat a block of code multiple times until a condition becomes false.
+
+some of the loops are
+for
+while 
+do while
+
+7. Loop Control Statements
+Loop control statements are used to change the normal flow of loops.
+
+some of the loop control statements are
+continue
+goto
+break
+
+8. Functions in C
+A function is a block of code that performs a specific task and can be reused.
+
+9. Arrays in C
+An array is a collection of elements of the same data type stored in continuous memory locations.
+
+there are two types of array:
+one dimensional array: Stores elements in a single row.
+multi dimensional array : sores elements in rows and columns (matrix form)
+
+10.String Handling Functions in C
+Strings in C are arrays of characters ending with the null character \0. C provides several functions in the C Standard Library (string.h) to handle strings.
+some of the keywords are 
+strlen(): Used to find the length of a string.
+strcmp(): Used to compare two strings.
+strcat(): used to join (concatenate) two strings.
+strcpy(): Used to copy one string into another.
+
+11. Structures in C
+A structure is a user-defined data type that allows storing different types of data in one variable.
+
+12. File Handling in C
+File handling allows programs to store data permanently in files instead of temporary memory.
+
+Importance
+
+Stores large amounts of data
+Data remains saved after program ends
+Helps in data management
+
+1. Opening a File
+Used to open a file using fopen().
+2. Writing to a File
+Used to write data into a file.
+3. Reading from a File
+Used to read data from a file.
+4. Closing a File
+Used to close the file using fclose().
+
+file handling helps programs save, read, and manage data efficiently.

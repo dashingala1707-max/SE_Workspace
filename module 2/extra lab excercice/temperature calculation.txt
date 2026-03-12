@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    float temp;
+
+    // Prompt user for input
+    printf("Input the temperature in Centigrade: ");
+    // Read the temperature
+    scanf("%f", &temp);
+
+    // Check the temperature against the specified criteria and display a message
+    if (temp < 0) {
+        printf("Freezing weather\n");
+    } else if (temp >= 0 && temp < 10) {
+        // The condition can be simplified to (temp < 10) due to the 'if (temp < 0)' check above
+        printf("Very Cold weather\n");
+    } else if (temp >= 10 && temp < 20) {
+         // The condition can be simplified to (temp < 20)
+        printf("Cold weather\n");
+    } else if (temp >= 20 && temp < 30) {
+         // The condition can be simplified to (temp < 30)
+        printf("Normal in Temp\n");
+    } else if (temp >= 30 && temp < 40) {
+         // The condition can be simplified to (temp < 40)
+        printf("Its Hot\n");
+    } else {
+        // This covers all temperatures >= 40 due to previous checks
+        printf("Its Very Hot\n");
+    }
+
+    return 0;
+}

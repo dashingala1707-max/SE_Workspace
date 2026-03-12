@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+// Function to find the length of a string manually
+int manual_strlen(char* str) {
+    int len = 0;
+    while (str[len] != '\0') {
+        len++;
+    }
+    return len;
+}
+
+// Function to reverse the string in-place
+void reverse_string(char* str) {
+    int length = manual_strlen(str); // Find length manually
+    int start = 0;
+    int end = length - 1;
+    char temp;
+
+    // Swap characters from the ends towards the center
+    while (start < end) {
+        // Swap the characters at start and end positions
+        temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+
+        // Move pointers inward
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    char str[100]; // Declare a character array (string)
+
+    printf("Enter a string: ");
+    // Use fgets for safer input that can include spaces (unlike scanf("%s"))
+    // Read up to 99 characters plus the null terminator
+    if (fgets(str, sizeof(str), stdin) == NULL) {
+        return 1; // Handle input error
+    }
+
+    // Remove the newline character added by fgets if present
+    int len = manual_strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0';
+        len--; // Update length after removing newline
+    }
+
+    // Call the function to reverse the string
+    reverse_string(str);
+
+    printf("Reversed string: %s\n", str);
+
+    return 0;
+}

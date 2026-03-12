@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_SENTENCE_LENGTH 200
+#define MAX_WORD_LENGTH 50
+
+int main() {
+    char sentence[MAX_SENTENCE_LENGTH];
+    char current_word[MAX_WORD_LENGTH], longest_word[MAX_WORD_LENGTH];
+    int i, j = 0, word_count = 0, longest_len = 0, current_len = 0;
+
+    printf("Enter a sentence: \n");
+    // Use fgets to safely read the input string, including spaces, and prevent buffer overflows
+    fgets(sentence, MAX_SENTENCE_LENGTH, stdin);
+
+    // Remove the trailing newline character added by fgets, if present
+    sentence[strcspn(sentence, "\n")] = '\0';
+
+    // Loop through the sentence character by character
+    for (i = 0; i <= strlen(sentence); i++) {
+        // Check for space or null terminator as word delimiters
+        if (sentence[i] == ' ' || sentence[i] == '\0') {
+            if (current_len > 0) {
+                // Terminate the current word string
+                current_word[j] = '\0';
+                word_count++;
+
+                // Check if the current word is the longest found so far
+                if (current_len > longest_len) {
+                    longest_len = current_len;
+                    // Copy the current word to longest_word
+                    strcpy(longest_word, current_word);
+                }
+
+                // Reset for the next word
+                current_len = 0;
+                j = 0;
+            }
+        } else {
+            // Append character to the current word array
+            current_word[j++] = sentence[i];
+            current_len++;
+        }
+    }
+
+    printf("\nNumber of words in the sentence: %d\n", word_count);
+    printf("Longest word: \"%s\" with length %d\n", longest_word, longest_len);
+
+    return 0;
+}

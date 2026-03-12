@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int i = 1; // Initialize the loop counter
+
+    printf("Numbers from 1 to 10 using a while loop:\\n");
+    // Continue looping as long as i is less than or equal to 10
+    while (i <= 10) {
+        printf("%d ", i);
+        i++; // Increment the counter
+    }
+    printf("\\n");
+
+    return 0;
+}

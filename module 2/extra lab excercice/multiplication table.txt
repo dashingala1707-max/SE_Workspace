@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int number, start_range, end_range, i;
+
+    // Get the number for which to print the table
+    printf("Enter an integer to display its multiplication table: ");
+    scanf("%d", &number);
+
+    // Get the starting range
+    printf("Enter the starting range (e.g., 1): ");
+    scanf("%d", &start_range);
+
+    // Get the ending range and ensure it is not less than the starting range
+    do {
+        printf("Enter the ending range (must be >= starting range): ");
+        scanf("%d", &end_range);
+    } while (end_range < start_range);
+    
+    printf("\nMultiplication table of %d from %d to %d:\n", number, start_range, end_range);
+
+    // Use a for loop to iterate through the specified range
+    for (i = start_range; i <= end_range; ++i) {
+        printf("%d x %d = %d\n", number, i, number * i);
+    }
+
+    return 0;
+}

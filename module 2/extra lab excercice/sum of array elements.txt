@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+// Function prototype to calculate the sum of array elements
+int calculateSum(int arr[], int n);
+
+// Function prototype to calculate the average of array elements
+float calculateAverage(int sum, int n);
+
+int main() {
+    int n, i, arr[100], sum; // Declare variables and an array with a maximum size of 100
+    float average;
+
+    // Prompt the user to enter the number of elements (N)
+    printf("Enter the number of elements (N): ");
+    scanf("%d", &n);
+
+    // Input N numbers from the user and store them in the array
+    printf("Enter %d numbers:\n", n);
+    for (i = 0; i < n; i++) {
+        printf("Element %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    // Call the calculateSum function to get the total sum
+    sum = calculateSum(arr, n);
+
+    // Call the calculateAverage function to get the average
+    average = calculateAverage(sum, n);
+
+    // Display the results
+    printf("\nSum of all numbers = %d\n", sum);
+    printf("Average of all numbers = %.2f\n", average); // .2f limits the average to two decimal places
+
+    return 0;
+}
+
+// Function definition to calculate the sum of array elements
+int calculateSum(int arr[], int n) {
+    int i, total = 0; // Initialize total to 0 to avoid garbage values
+    for (i = 0; i < n; i++) {
+        total += arr[i]; // Add each element to the total
+    }
+    return total;
+}
+
+// Function definition to calculate the average of array elements
+float calculateAverage(int sum, int n) {
+    // Cast sum to float before division to ensure floating-point result
+    return (float)sum / n;
+}

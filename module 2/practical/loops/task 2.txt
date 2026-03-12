@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int num, i;
+    int evenCount = 0, oddCount = 0;
+    int evenSum = 0, oddSum = 0;
+
+    printf("Please enter 10 numbers:\n");
+
+    for(i = 1; i <= 10; i++) {
+        printf("Number %d: ", i);
+        scanf("%d", &num);
+
+        // Check if the number is even or odd
+        if(num % 2 == 0) {
+            evenCount++;      // a. Count even numbers
+            evenSum += num;   // c. Sum of even numbers
+        } else {
+            oddCount++;       // b. Count odd numbers
+            oddSum += num;    // d. Sum of odd numbers
+        }
+    }
+
+    // Displaying the results
+    printf("\n--- Results ---\n");
+    printf("a. Total Even numbers: %d\n", evenCount);
+    printf("b. Total Odd numbers: %d\n", oddCount);
+    printf("c. Sum of Even numbers: %d\n", evenSum);
+    printf("d. Sum of Odd numbers: %d\n", oddSum);
+
+    return 0;
+}
