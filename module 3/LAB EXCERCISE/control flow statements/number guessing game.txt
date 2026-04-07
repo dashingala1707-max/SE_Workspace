@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+// Use the standard namespace for easier access to common functions like std::cout and std::cin
+using namespace std;
+
+int main() {
+    // Seed the random number generator using the current time
+    // This ensures a different random number is generated each time the program runs
+    srand(static_cast<unsigned int>(time(0)));
+
+    // Generate a random number between 1 and 100
+    int secretNumber = rand() % 100 + 1;
+    int userGuess = 0;
+    int attempts = 0;
+    
+    cout << "Welcome to the Number Guessing Game!" << endl;
+    cout << "Try to guess the secret number between 1 and 100." << endl;
+
+    // Use a do-while loop to allow multiple guesses until the correct number is found
+    do {
+        cout << "Enter your guess: ";
+        cin >> userGuess;
+        attempts++;
+
+        if (userGuess > secretNumber) {
+            cout << "Too high! Try a smaller number." << endl;
+        } else if (userGuess < secretNumber) {
+            cout << "Too low! Try a higher number." << endl;
+        } else {
+            // This block is executed when userGuess == secretNumber
+            cout << "Congratulations! You guessed the correct number in " << attempts << " attempts." << endl;
+        }
+    } while (userGuess != secretNumber); // The loop continues as long as the guess is not correct
+
+    return 0;
+}

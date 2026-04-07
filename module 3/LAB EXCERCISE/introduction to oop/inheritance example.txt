@@ -1,0 +1,84 @@
+#include <iostream>
+using namespace std;
+
+// Base class
+class Person
+{
+protected:
+    string name;
+    int age;
+
+public:
+    void setPerson(string n, int a)
+    {
+        name = n;
+        age = a;
+    }
+
+    void displayPerson()
+    {
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+    }
+};
+
+// Derived class: Student
+class Student : public Person
+{
+private:
+    int rollNo;
+
+public:
+    void setStudent(int r)
+    {
+        rollNo = r;
+    }
+
+    void displayStudent()
+    {
+        displayPerson(); // Reusing base class function
+        cout << "Roll No: " << rollNo << endl;
+    }
+};
+
+// Derived class: Teacher
+class Teacher : public Person
+{
+private:
+    string subject;
+
+public:
+    void setTeacher(string s)
+    {
+        subject = s;
+    }
+
+    void displayTeacher()
+    {
+        displayPerson(); // Reusing base class function
+        cout << "Subject: " << subject << endl;
+    }
+};
+
+int main()
+{
+    // Student object
+    Student s;
+    s.setPerson("Rahul", 20);
+    s.setStudent(101);
+
+    cout << "Student Details:" << endl;
+    s.displayStudent();
+
+    cout << endl;
+
+    // Teacher object
+    Teacher t;
+    t.setPerson("Mr. Sharma", 40);
+    t.setTeacher("Mathematics");
+
+    cout << "Teacher Details:" << endl;
+    t.displayTeacher();
+
+    return 0;
+}

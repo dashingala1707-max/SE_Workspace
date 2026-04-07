@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+//int add(int num1,int num2);
+//int subtract(int num1,int num2);
+//int multiply(int num1,int num2);
+//int divide(int num1,int num2);
+
+int main()
+{
+    int num1,num2;
+    char ab;
+    int c = 0;
+    
+    cout<<"enter two numbers : ";
+    cin>>num1>>num2;
+    
+    cout<<"enter the operator(+,-,*,/) : ";
+    cin>>ab;
+    
+    if(ab == '+')
+    {
+        c = num1 + num2;
+    }
+    else if(ab == '-')
+    {
+        c = num1 - num2;
+    }
+    else if(ab == '*')
+    {
+        c = num1 * num2;
+    }
+    else if(ab == '/')
+    {
+        c = num1 / num2;
+    }
+    else
+    {
+        cout<<"you entered wrong operator";
+    }
+    cout<<"your answer is : "<< c << endl;
+    
+    
+    return 0;
+}

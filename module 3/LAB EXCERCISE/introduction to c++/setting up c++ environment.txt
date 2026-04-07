@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    int b;
+    int c=0;
+    cout<<"enter number 1 :"<<endl;
+    cin>>a;
+    
+    cout<<"enter number 2 :"<<endl;
+    cin>>b;
+    
+    c=a+b;
+    cout<<"your sum is :"<<c<<endl;
+    
+    return 0;
+}

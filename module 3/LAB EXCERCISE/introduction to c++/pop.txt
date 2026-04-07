@@ -1,0 +1,25 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+double calculate_area(double width, double height)
+{
+    return width * height;
+}
+
+int main() 
+{
+    
+    double rect_width = 5.0;
+    double rect_height = 10.0;
+
+    
+    double area = calculate_area(rect_width, rect_height);
+
+    cout << "--- Procedural Programming ---" << std::endl;
+    cout << "Width: " << rect_width << std::endl;
+    cout << "Height: " << rect_height << std::endl;
+    cout << "Area: " << area << std::endl;
+
+    return 0;
+}

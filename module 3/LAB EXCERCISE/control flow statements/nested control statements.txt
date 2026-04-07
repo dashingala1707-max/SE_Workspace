@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int height;
+    cout<<"enter thr height of the triangle : ";
+    cin>>height;
+    
+    for(int a = 1;a <= height;a++)
+    {
+        for(int b = 1;b <= a;b++)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+}

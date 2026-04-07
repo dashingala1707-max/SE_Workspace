@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    int score = 0;
+    double speed = 45.5;
+    char grade = 'A';            
+    string playerName = "Alex"; 
+
+    cout << "Initial Data:" << endl;
+    cout << "Player: " << playerName << ", Score: " << score << ", Speed: " << speed << ", Grade: " << grade << endl << endl;
+
+
+    score = score + 100;         
+    speed = 60.2;
+    grade = 'B';
+
+    cout << "Updated Data (Variables changed):" << endl;
+    cout << "Player: " << playerName << ", Score: " << score << ", Speed: " << speed << ", Grade: " << grade << endl << endl;
+
+
+    const double PI = 3.14159;
+    const int MAX_LIVES = 3;     
+    const string GAME_TITLE = "Adventure Game";
+
+    cout << "Constant Data:" << endl;
+    cout << "Game Title: " << GAME_TITLE << endl;
+    cout << "Max Lives: " << MAX_LIVES << endl;
+    cout << "Value of PI: " << PI << endl << endl;
+
+   
+    return 0;
+}

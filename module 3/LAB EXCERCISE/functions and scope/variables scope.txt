@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+// Global variable
+int x = 10;
+
+void showGlobal()
+{
+    cout << "Inside showGlobal(), global x = " << x << endl;
+}
+
+void showLocal()
+{
+    int x = 20;  // Local variable (same name as global)
+    cout << "Inside showLocal(), local x = " << x << endl;
+}
+
+int main()
+{
+    cout << "Inside main(), global x = " << x << endl;
+
+    showGlobal();
+    showLocal();
+
+    cout << "Back in main(), global x = " << x << endl;
+
+    return 0;
+}

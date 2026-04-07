@@ -1,0 +1,38 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+
+
+class Rectangle {
+private:
+    
+    double width;
+    double height;
+
+public:
+    
+    Rectangle(double w, double h) : width(w), height(h) {}
+    
+    double calculate_area() const {
+        return width * height;
+         }
+         
+    double get_width() const { return width; }
+    double get_height() const { return height; }
+};
+
+int main()
+{
+    
+    Rectangle my_rectangle(5.0, 10.0);
+
+    double area = my_rectangle.calculate_area();
+
+    cout<<"--- Object-Oriented Programming ---"<<endl;
+    cout<<"Width:"<<my_rectangle.get_width()<<endl;
+    cout<<"Height:"<<my_rectangle.get_height()<<endl;
+    cout<<"Area:"<<area<<endl;
+    
+    return 0;
+}

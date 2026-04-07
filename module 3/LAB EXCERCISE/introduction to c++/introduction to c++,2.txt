@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main()
+{
+    int a;
+    string name;
+    
+    cout<<"enter your age"<<endl;
+    cin>>a;
+    
+    cout<<"enter your name"<<endl;
+    cin>>name;
+    
+    cout<<"good morning"<<name<<" "<<endl;
+    
+    return 0;
+}

@@ -1,0 +1,106 @@
+INTRODUCTION TO C++.................
+
+1.)Key Differences between Procedural Programming and Object-Oriented Programming (OOP)
+Procedural Programming (POP) follows a top-down approach and focuses on functions, while Object-Oriented Programming (OOP) follows a bottom-up approach and focuses on objects and classes. POP has less data security as data is globally accessible, whereas OOP provides better security through encapsulation. OOP also supports better code reusability compared to POP.
+
+2.)Advantages of OOP over POP
+OOP provides better data security using encapsulation and allows code reusability through inheritance. It makes programs easier to maintain and modify due to its modular structure. OOP also helps in representing real-world concepts, making programs easier to understand.
+
+3.)Steps to Set Up a C++ Development Environment
+
+To set up a C++ environment, first install a compiler like GCC or MinGW. Then install an IDE such as Code::Blocks or VS Code. Configure the compiler if needed, write a simple program, and compile and run it to check if everything works properly.
+
+4.)Main Input/Output Operations in C++
+
+C++ uses cin for input and cout for output through the iostream library. The >> operator is used to take input, and the << operator is used to display output. These operations help in interacting with the user.
+
+
+2.VARIABLES , DATA TYPES AND OPEARTORS.
+
+1.)Data Types in C++
+
+C++ provides different types of data types such as basic, derived, and user-defined data types. Basic data types include int, float, char, and double, which store numbers and characters. Derived data types include arrays and pointers, while user-defined data types include structures, unions, and classes. For example, int a = 10; stores an integer, and float b = 5.5; stores a decimal value.
+
+2.)Difference between Implicit and Explicit Type Conversion
+
+Implicit type conversion is automatically performed by the compiler when converting a smaller data type into a larger one, such as converting an int to a float. Explicit type conversion, also called type casting, is done manually by the programmer using syntax like (int) or (float). For example, converting float to int using (int)3.5 will result in 3.
+
+3.)Types of Operators in C++
+
+C++ has several types of operators, including arithmetic, relational, logical, assignment, and increment/decrement operators. Arithmetic operators like +, -, *, and / perform calculations. Relational operators like == and > compare values. Logical operators like && and || are used in conditions. Assignment operators like = assign values, and increment/decrement operators like ++ and -- increase or decrease values.
+
+4.)Constants and Literals in C++
+
+Constants are fixed values that do not change during program execution, and they are defined using the const keyword. Literals are the actual values assigned to variables, such as numbers or characters. For example, in const int a = 10;, a is a constant, and 10 is a literal. They are used to make programs more readable and prevent accidental changes in values.
+
+3.CONTROL FLOW STATEMENTS.
+
+1.)Conditional Statements in C++
+
+Conditional statements in C++ are used to make decisions based on conditions. The if-else statement executes a block of code if a condition is true, otherwise another block is executed. The switch statement is used when multiple conditions are based on the same variable.
+
+2.)Difference between for, while, and do-while loops
+
+The for loop is used when the number of iterations is known, and it includes initialization, condition, and increment in one line. The while loop is used when the condition is checked before execution and the number of iterations may not be fixed. The do-while loop executes at least once because the condition is checked after execution.
+
+3.)Use of break and continue statements
+
+The break statement is used to exit a loop immediately, while the continue statement skips the current iteration and moves to the next one.
+
+4.)Nested Control Structures
+
+Nested control structures mean using one control statement inside another, such as a loop inside a loop or an if inside a loop. This is useful for solving complex problems.
+
+5.FUNCTIONS AND SCOPE
+
+1.)Function in C++
+
+A function in C++ is a block of code that performs a specific task and can be reused multiple times. It consists of three parts: function declaration, definition, and calling. The declaration tells the compiler about the function name and parameters, the definition contains the actual code, and the calling executes the function. For example, int add(int a, int b); is a declaration, and calling add(2,3); executes it.
+
+2.)Scope of Variables in C++
+
+The scope of a variable defines where it can be accessed in a program. Variables can have local or global scope. Local variables are declared inside a function and can only be used within that function, while global variables are declared outside all functions and can be accessed anywhere in the program. For example, a variable declared inside main() is local, while one declared outside is global.
+
+3.)Recursion in C++
+
+Recursion is a technique where a function calls itself to solve a problem. It is useful for problems that can be broken into smaller parts, such as factorial. A recursive function must have a base case to stop execution. For example, a factorial function calls itself until the number becomes 1.
+
+4.)Function Prototypes in C++
+
+Function prototypes are declarations of functions written before the main() function to inform the compiler about the function’s name, return type, and parameters. They are used to avoid errors and allow functions to be called before they are defined. For example, int add(int, int); is a function prototype.
+
+5.ARRAY AND STRINGS.
+
+1.)Arrays in C++
+
+Arrays in C++ are collections of elements of the same data type stored in contiguous memory locations. A single-dimensional array stores elements in a single row and is accessed using one index, while a multidimensional array (like 2D) stores data in rows and columns and is accessed using multiple indices. For example, int a[5]; is a 1D array, and int b[2][3]; is a 2D array.
+
+2.)String Handling in C++
+
+String handling in C++ can be done using character arrays or the string class. Character arrays store strings as a sequence of characters ending with a null character (\0), while the string class provides built-in functions for easier use. For example, char name[] = "Hello"; and string s = "Hello"; are two ways to handle strings.
+
+3.)Array Initialization in C++
+
+Arrays in C++ can be initialized at the time of declaration. A 1D array can be initialized like int a[3] = {1, 2, 3};. A 2D array can be initialized like int b[2][2] = {{1, 2}, {3, 4}};. If values are not provided, elements may contain garbage values.
+
+4.)String Operations and Functions in C++
+
+C++ provides various string operations such as concatenation, length finding, and comparison. Using the string class, functions like length(), append(), and compare() are commonly used. For example, s1 + s2 joins two strings, s.length() gives the size, and s1.compare(s2) compares two strings.
+
+6.INTRODUCTION TO OBJECT-ORENTAD PROGRAMMING
+
+1.)Key Concepts of Object-Oriented Programming (OOP)
+
+Object-Oriented Programming is based on key concepts like encapsulation, inheritance, polymorphism, and abstraction. Encapsulation means binding data and functions together, inheritance allows one class to use properties of another, polymorphism enables one function to behave in different ways, and abstraction hides unnecessary details from the user. These concepts make programs more secure, reusable, and easy to manage.
+
+2.)Classes and Objects in C++
+
+A class in C++ is a blueprint or template used to create objects, while an object is an instance of a class. The class defines variables and functions, and the object uses them. For example, a class Car can have properties like speed and functions like drive, and an object like car1 will use these features.
+
+3.)Inheritance in C++
+
+Inheritance is a feature in C++ that allows one class (child class) to acquire the properties and methods of another class (parent class). This helps in code reusability and reduces duplication. For example, a class Animal can have a function eat(), and a class Dog can inherit it and use the same function without rewriting it.
+
+4.)Encapsulation in C++
+
+Encapsulation is the process of combining data and functions into a single unit (class) and restricting direct access to data. It is achieved using access specifiers like private, public, and protected. Data is usually kept private and accessed through public functions (getters and setters), which ensures data security and control.
