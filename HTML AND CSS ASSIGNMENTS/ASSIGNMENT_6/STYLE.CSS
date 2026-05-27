@@ -1,0 +1,46 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Gallery Layout using CSS Grid */
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+/* Images */
+.gallery img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    /* Grayscale Effect */
+    filter: grayscale(100%);
+
+    transition: 0.4s;
+}
+
+/* Hover Effect */
+.gallery img:hover {
+
+    /* Color Effect */
+    filter: grayscale(0%);
+
+    transform: scale(1.05);
+}

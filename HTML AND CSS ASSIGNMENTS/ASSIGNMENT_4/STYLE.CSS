@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    color: darkred;
+    margin-bottom: 30px;
+}
+
+h2{
+    color: #333;
+    margin-top: 30px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td{
+    border: 2px solid #ccc;
+}
+
+th{
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Bonus Hover Zoom Effect */
+img:hover{
+    transform: scale(1.1);
+}
